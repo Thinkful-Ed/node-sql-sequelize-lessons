@@ -1,37 +1,37 @@
 <course name="SQL and Sequelize for students of Node" id="NODE-SQL-001" code="NODE-SQL-001" version="1">
     <content>
-        <unit src="1.0" >
+        <unit src="1.0" uuid="81c1ed40-e895-11e6-a3eb-03934004d1da">
             <!-- introducing sql and postgres -->
-            <lesson src="1.1.0" >
+            <lesson src="1.1.0" uuid="81c21450-e895-11e6-a3eb-03934004d1da">
                 <!-- setting up postgres locally -->
-                <assignment src="1.1.1" ></assignment>
+                <assignment src="1.1.1" uuid="81c26270-e895-11e6-a3eb-03934004d1da"></assignment>
                 <!-- sql shell basics -->
-                <assignment src="1.1.2" ></assignment>
+                <assignment src="1.1.2" uuid="81c2b090-e895-11e6-a3eb-03934004d1da"></assignment>
                 <!-- sql basics drills -->
-                <assignment src="1.1.3" ></assignment>
+                <assignment src="1.1.3" uuid="81c2b091-e895-11e6-a3eb-03934004d1da"></assignment>
                 <!-- joins, related data, and constraints -->
-                <assignment src="1.1.4" ></assignment>
+                <assignment src="1.1.4" uuid="81c2d7a0-e895-11e6-a3eb-03934004d1da"></assignment>
                 <!-- postgres in the cloud -->
-                <assignment src="1.1.5" ></assignment>
+                <assignment src="1.1.5" uuid="81c2feb0-e895-11e6-a3eb-03934004d1da"></assignment>
                 <!-- challenge: blog app database -->
-                <assignment src="1.1.6" ></assignment>
+                <assignment src="1.1.6" uuid="81c2feb1-e895-11e6-a3eb-03934004d1da"></assignment>
                 <!-- wrap up -->
-                <assignment src="1.1.7" ></assignment>
+                <assignment src="1.1.7" uuid="81c325c0-e895-11e6-a3eb-03934004d1da"></assignment>
             </lesson>
             <!-- data modeling with sequelize -->
-            <lesson src="1.2.0" >
+            <lesson src="1.2.0" uuid="81c34cd0-e895-11e6-a3eb-03934004d1da">
                 <!-- first steps with sequelize -->
-                <assignment src="1.2.1" ></assignment>
+                <assignment src="1.2.1" uuid="81c34cd1-e895-11e6-a3eb-03934004d1da"></assignment>
                 <!-- deeper into sequelize -->
-                <assignment src="1.2.2" ></assignment>
+                <assignment src="1.2.2" uuid="81c373e0-e895-11e6-a3eb-03934004d1da"></assignment>
                 <!-- challenge: complete the restaurants grads app -->
-                <assignment src="1.2.3" ></assignment>
+                <assignment src="1.2.3" uuid="81c373e1-e895-11e6-a3eb-03934004d1da"></assignment>
                 <!-- sequelize and CI -->
-                <assignment src="1.2.4" ></assignment>
+                <assignment src="1.2.4" uuid="81c39af0-e895-11e6-a3eb-03934004d1da"></assignment>
                 <!-- challenge: blogging app with Sequelize and postgres -->
-                <assignment src="1.2.5" ></assignment>
+                <assignment src="1.2.5" uuid="81c39af1-e895-11e6-a3eb-03934004d1da"></assignment>
                 <!-- wrap up -->
-                <assignment src="1.2.6" ></assignment>
+                <assignment src="1.2.6" uuid="81c39af2-e895-11e6-a3eb-03934004d1da"></assignment>
             </lesson>
         </unit>
     </content>

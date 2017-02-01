@@ -310,4 +310,3 @@ To drop a database, from the command line you can run `dropdb <dbname>`. From th
 
 To quit the Postgres shell, run `\q`.
 
-

@@ -9,9 +9,3 @@ In this stand alone module, you'll learn how to model and persist data using Pos
 
 This module assumes that you've already worked learned how Mongo and Mongoose, and that you know how to set up and run integration tests and continuous integration, as taught in the main Node course.
 
-
-
-
-
-
-

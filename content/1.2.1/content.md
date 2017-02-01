@@ -286,3 +286,4 @@ Like with Mongoose, Sequelize queries return a promise object. Here, we use the 
 Spend a few minutes looking over our routes, paying attention to the use of `findAll`, `findById`, `create`, `update`, and `destroy`. You can read up on these methods in the [Sequelize docs](http://sequelize.readthedocs.io/en/v3/api/model/).
 
 This reading has given you a sense of the basics of working with Sequelize. In the next assignment, we'll examine a more complex app and get into relationships, migrations, and testing.
+

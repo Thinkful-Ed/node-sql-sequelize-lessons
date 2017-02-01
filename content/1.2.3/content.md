@@ -1,6 +1,6 @@
 ---
 type: project
-name: "Challenge: complete the restaurant grades app"
+name: 'Challenge: complete the restaurant grades app'
 author: Ben White
 time: 180
 

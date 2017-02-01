@@ -18,3 +18,4 @@ After that we'll revisit our NYC restaurant grades app from earlier in the cours
 Next, we'll learn how continuous integration and deployment work with Sequelize.
 
 In the final assignment in this lesson, you'll write a simple blogging app, this time using Sequelize instead of Mongoose.
+

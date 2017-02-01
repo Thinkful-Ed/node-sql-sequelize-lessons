@@ -1,6 +1,6 @@
 ---
 type: project
-name: "Challenge: blogging app with Sequelize and Postgres"
+name: 'Challenge: blogging app with Sequelize and Postgres'
 author: Ben White
 time: 300
 
@@ -56,3 +56,4 @@ Additional requirements:
 Limit yourself to a total of five hours for this challenge. Even if you're not done at that point, submit a link to your GitHub repo below.
 
 When you've finished, you can look at the source code for [this example solution](https://github.com/Thinkful-Ed/node-blog-app-with-sequelize).
+

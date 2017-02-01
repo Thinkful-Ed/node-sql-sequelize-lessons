@@ -1,6 +1,6 @@
 ---
 type: project
-name: "Challenge: blog app database"
+name: 'Challenge: blog app database'
 author: Ben White
 time: 90
 
@@ -29,3 +29,4 @@ Here are the details:
 ## Example solution
 
 Here's [one way](https://gist.github.com/benjaminEwhite/08e492778159fb71402f4f23242dce9c) you could model this problem.
+

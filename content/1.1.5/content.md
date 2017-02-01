@@ -35,3 +35,4 @@ psql postgres://lxpqqsnc:POOWGwPWzuV-QhYcjm0P88bURb2Jxo1i@elmer.db.elephantsql.c
 From there, it's just the same as working with Postgres locally.
 
 To quit, run `\q`.
+

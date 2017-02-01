@@ -1,6 +1,6 @@
 ---
 type: project
-name: Joins, related data, and constraints
+name: 'Joins, related data, and constraints'
 author: Ben White
 time: 60
 
