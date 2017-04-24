@@ -12,7 +12,7 @@ In this assignment, we'll continue our exploration of Sequelize. We'll revisit o
 
 To start, clone [this GitHub repo](https://github.com/Thinkful-Ed/node-restaurants-sequelize-tests/tree/master). Now `cd` into the folder, and run `npm install`.
 
-Next, we need to create and seed our database. Make sure that your Postgres database server is running. Then from the command line, run `createdb dev-restaurants-app -U dev` to create a new database using the "dev" user we created earlier in this unit. We'll use this database when we're developing locally. Let's also go ahead and create a separate database for tests. Run `createdb test-restaurants-app -U dev`.
+Next, we need to create and seed our database. Make sure that your Postgres database server is running. Then from the command line, run `createdb -U dev dev-restaurants-app` to create a new database using the "dev" user we created earlier in this unit. We'll use this database when we're developing locally. Let's also go ahead and create a separate database for tests. Run `createdb -U dev test-restaurants-app`.
 
 Note that these database names correspond to the default values we've put in `config.js`.
 

@@ -27,7 +27,7 @@ We'll use Homebrew to install Postgres.
 
   ![mac-create-dev-user.gif](mac-create-dev-user.gif)
 
-8. Next, we'll create a database called `dev`. Run the command `createdb dev -U dev`.
+8. Next, we'll create a database called `dev`. Run the command `createdb -U dev dev`.
 9. Now, let's try to use the *psql* shell. Run the command `psql -U dev` from the command line. This will connect you as the user "dev" to the database named "dev". When you start `psql` without listing a database to connect to, it attempts to connect to a db with the name of the user. We also could have done `psql dev -U dev` to be explicit about the database we're connecting to. We'll learn all about working with psql in the next reading, but for now try running the command `\l` to list the databases on the server. To get out of that screen, type `\q`, and then type `\q` to quit the psql shell.
 10. To stop the database server, run `pg_ctl stop`.
 
@@ -60,7 +60,6 @@ We'll use Homebrew to install Postgres.
 
   ![win-create-dev-super-user.gif](win-create-dev-super-user.gif)
 
-10. Next, we'll create a database called `dev`. Back in GitBash, run the command `createdb dev -U dev`.
+10. Next, we'll create a database called `dev`. Back in GitBash, run the command `createdb -U dev dev`.
 11. Now, let's try to use the *psql* shell. In a GitBash terminal, run the command `psql -U dev` from the command line. This will connect you as the user "dev" (that's the `-U dev` part of the command) to the database named "dev". When you start `psql` without listing a database to connect to, it attempts to connect to a db with the name of the user. We also could have done `psql dev -U dev` to be explicit about the database we're connecting to. We'll learn all about working with psql in the next reading, but for now try running the command `\l` to list the databases on the server, and then `\q` to quit.
-12.
 
