@@ -23,7 +23,7 @@ Here are the details:
     - A *tag* has tag text. For instance "current events".
     - As a stretch goal, configure *comments* so they can have a referring comment. In other words, each comment can optionally point to another comment.
 * In the same script, write SQL statements to create some users, posts, and comments.
-* Ultimately, you need a script that can be run like this: `psql <database> -f ./bootstrap-blog-app.sql`. When you've got this script, save it to Gist or Github.
+* Ultimately, you need a script that can be run like this: `psql -f ./bootstrap-blog-app.sql <database>`. When you've got this script, save it to Gist or Github.
 * Create a new ElephantSQL instance and run your SQL script.
 
 ## Example solution

@@ -16,7 +16,7 @@ Next, we need to create and seed our database. Make sure that your Postgres data
 
 Note that these database names correspond to the default values we've put in `config.js`.
 
-Now we need to seed our dev database with restaurants data from the `nyc-restaurants-data-backup.sql` file in this repo. Make sure you're inside the project folder, and then run `psql dev-restaurants-app -U dev -f ./nyc-restaurants-data-backup.sql `. If all went well, you'll see an output that looks like this:
+Now we need to seed our dev database with restaurants data from the `nyc-restaurants-data-backup.sql` file in this repo. Make sure you're inside the project folder, and then run `psql -U dev -f ./nyc-restaurants-data-backup.sql dev-restaurants-app`. If all went well, you'll see an output that looks like this:
 
 ![restaurants-backup.png](restaurants-backup.png)
 

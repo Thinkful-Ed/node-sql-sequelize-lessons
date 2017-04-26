@@ -12,7 +12,7 @@ Limit yourself to 90 minutes for this entire exercise. Even if you're not done a
 
 When you're done with this drill set, paste your drill solutions in a single [Gist](https://gist.github.com/) file, and submit a link to it at the bottom of this page.
 
-Your starting point for this drill set is the restaurants database we imported into Postgres in the previous assignment. Make sure your Postgres server is running (`pg_ctl status`). Next, we'll drop our database and restore it afresh. From another terminal window, run `dropdb dev-restaurants-app`, then `createdb -U dev dev-restaurants-app`, and finally `psql dev-restaurants-app -U dev -f ~/path-to-backup-data`. This will get your db into a known state (assuming you made changes to it in the previous assignment).
+Your starting point for this drill set is the restaurants database we imported into Postgres in the previous assignment. Make sure your Postgres server is running (`pg_ctl status`). Next, we'll drop our database and restore it afresh. From another terminal window, run `dropdb dev-restaurants-app`, then `createdb -U dev dev-restaurants-app`, and finally `psql -U dev -f ~/path-to-backup-data dev-restaurants-app`. This will get your db into a known state (assuming you made changes to it in the previous assignment).
 
 
 ## 1. Get all restaurants

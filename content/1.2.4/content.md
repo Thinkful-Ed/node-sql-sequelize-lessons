@@ -58,7 +58,7 @@ Now we need to create a new database on ElephantSQL, run migrations on that data
 
 To create a database on ElephantSQL, follow the same steps from the previous lesson. Copy the database URL. Then, in Heroku, add a config var to your app called `DATABASE_URL`, pasting in the URL for the value. This will trigger Heroku to rebuild your app.
 
-Now, we just need to run our migration. From the command line, run the command `psql postgres://<elephant-sql-db-url> -f ./migrations/migrations/0001_restaurants_and_grades_initial.sql`. This will create the tables required by our models in the database.
+Now, we just need to run our migration. From the command line, run the command `psql -f ./migrations/migrations/0001_restaurants_and_grades_initial.sql postgres://<elephant-sql-db-url>`. This will create the tables required by our models in the database.
 
 Now, when you visit the `/restaurants` URL for your app, you should get back a JSON object that looks like this:
 

@@ -21,7 +21,7 @@ Once the new instance is created, you can click on it to get the details about t
 Let's upload our backup restaurants data to Elephant SQL and then log in to the shell. From the command line, run the following command:
 
 ```
-psql postgres://username:password@host.com:5432/dbName -f ./backup.sql
+psql -f ./backup.sql postgres://username:password@host.com:5432/dbName
 ```
 
 Substitute in the URL for your database, and the path to the backup data for the `-f` flag. You should see the same output you got when you restored this data to your local db.
