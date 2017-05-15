@@ -1,5 +1,5 @@
 ---
-type: project
+type: written content
 name: 'Joins, related data, and constraints'
 author: Ben White
 time: 60
