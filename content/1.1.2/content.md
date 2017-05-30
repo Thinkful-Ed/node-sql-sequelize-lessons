@@ -35,7 +35,7 @@ When the dump file is a plain text SQL file (which is the format of the backup w
 
 [Download this SQL dump](https://tf-assets-prod.s3.amazonaws.com/courses/node/assets/nyc-restaurants-data-backup.sql).
 
-Now we need to import the backup data. To do that, we'll open psql using the `psql` command with the `-f` flag to specify a SQL script that should be executed on the database. From the command line, run `psql -U dev dev-restaurants-app -f ~/path-to-backup-data`. Make sure you substitute in the right path to the backup data (for instance, `~/Downloads/nyc-restaurants-data-backup.sql`).
+Now we need to import the backup data. To do that, we'll open psql using the `psql` command with the `-f` flag to specify a SQL script that should be executed on the database. From the command line, run `psql -U dev -f ~/path-to-backup-data dev-restaurants-app`. Make sure you substitute in the right path to the backup data (for instance, `~/Downloads/nyc-restaurants-data-backup.sql`).
 
 ![psql-import-02.gif](psql-import-02.gif)
 
