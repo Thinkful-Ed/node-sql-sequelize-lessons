@@ -128,7 +128,7 @@ To start off, let's retrieve all of the restaurants from our database. We're als
 ```sql
 \x
 -- then
-SELECT * from restaurants;
+SELECT * FROM restaurants;
 ```
 
 Running this command will produce a stream of results that you can scroll through using the down and up arrows.
