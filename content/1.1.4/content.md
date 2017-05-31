@@ -118,7 +118,7 @@ The right delete behavior for foreign key constraints depends on the specifics o
 
 ## Querying between tables with joins
 
-To query between tables in SQL, we can use [joins](https://www.postgresql.org/docs/current/static/queries-table-expressions.html#QUERIES-JOIN). Let's say we wanted to restaurant data alongside each grade. Here's how we could do that:
+To query between tables in SQL, we can use [joins](https://www.postgresql.org/docs/current/static/queries-table-expressions.html#QUERIES-JOIN). Let's say we wanted to display restaurant data alongside each grade. Here's how we could do that:
 
 ```sql
 SELECT grades.id as "grade id", grades.grade, grades.date as "grade date", restaurants.id as "restaurant id", restaurants.name, restaurants.borough
