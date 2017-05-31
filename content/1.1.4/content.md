@@ -40,7 +40,7 @@ If you run `\d grades`, you can see that there is a foreign key constraint calle
 
 The principle of *referential integrity* holds that when you have a foreign key like `restaurant_id` that refers to a different row, you should never end up with a `restaurant_id` for a non-existent restaurant.
 
-Here's that behavior was achieved when originally setting up this database:
+Here's how that behavior was achieved when originally setting up this database:
 
 ```sql
 CREATE TABLE grades (
