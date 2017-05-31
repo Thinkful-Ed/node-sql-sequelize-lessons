@@ -23,7 +23,7 @@ We'll use Homebrew to install Postgres.
 
   ![mac_pg_ctl_commands.gif](mac_pg_ctl_commands.gif)
 
-7. By default, the installer will have created a database superuser (i.e., one with admin level privileges) with your system name (i.e., the one that you get when you run `whoami` from the command line). We're going to create a superuser with the name `dev` that we can use when developing locally. Run the command `createuser -Pw --interactive`. When prompted, enter `dev` for the name, a password of your choosing, and `y` for the superuser option. This will create a new admin level user named `dev`. When we connect to the database server through our Node apps, we'll have to supply our password, but we've set up this user so that when working with psql from the command line, we won't need to manually supply the password.
+7. By default, the installer will have created a database superuser (i.e., one with admin level privileges) with your system name (i.e., the one that you get when you run `whoami` from the command line). We're going to create a superuser with the name `dev` that we can use when developing locally. While the server is running, enter the command `createuser -Pw --interactive`. When prompted, enter `dev` for the name, a password of your choosing, and `y` for the superuser option. This will create a new admin level user named `dev`. When we connect to the database server through our Node apps, we'll have to supply our password, but we've set up this user so that when working with psql from the command line, we won't need to manually supply the password.
 
   ![mac-create-dev-user.gif](mac-create-dev-user.gif)
 
