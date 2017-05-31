@@ -215,11 +215,11 @@ SELECT count(*) from restaurants
 
 ## Updating records
 
-To update a record, we use [`UPDATE`](https://www.postgresql.org/docs/current/static/sql-update.html). We update a table, setting values on one or more columns, rows targeted by a query. This query updates the cuisine of all 'French' restaurants to 'Francais':
+To update a record, we use [`UPDATE`](https://www.postgresql.org/docs/current/static/sql-update.html). We update a table, setting values on one or more columns, rows targeted by a query. This query updates the cuisine of all 'French' restaurants:
 
 ```sql
 UPDATE restaurants
-  SET cuisine = 'Francais'
+  SET cuisine = 'la cuisine Française'
   WHERE cuisine = 'French';
 ```
 
