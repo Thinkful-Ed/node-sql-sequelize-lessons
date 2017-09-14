@@ -43,7 +43,7 @@ We'll use Homebrew to install Postgres.
 
   ![win-set-postgres-dir-var.gif](win-set-postgres-dir-var.gif)
 
-5. Now, we need to create a `PGDATA` environment variable, which points to the folder that database files are stored in. We can reuse the `POSTGRES_DIR` variable we just created. Reopen the System Properties => Environment Variables, and add a new entry for `PGDATA`, setting it to `%POSTGRES_DIR%/data`.
+5. Now, we need to create a `PGDATA` environment variable, which points to the folder that database files are stored in. We can reuse the `POSTGRES_DIR` variable we just created. Reopen the System Properties => Environment Variables, and add a new entry for `PGDATA`, setting it to `%POSTGRES_DIR%\data`.
 
   ![win-set-pg-data-var.gif](win-set-pg-data-var.gif)
 

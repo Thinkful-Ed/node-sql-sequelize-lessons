@@ -1,6 +1,6 @@
 ---
 type: lesson intro
-name: Introducing SQL and PostGres
+name: Introducing SQL and PostgreSQL
 author: Benjamin White
 
 ---
