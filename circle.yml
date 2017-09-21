@@ -1,6 +1,6 @@
 machine:
   node:
-    version: v0.10.30
+    version: v6.10.0
 
 dependencies:
   pre:
