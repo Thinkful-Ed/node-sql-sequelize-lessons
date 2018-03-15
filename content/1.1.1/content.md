@@ -62,7 +62,7 @@ mkdir $APPDATA/postgresql
 echo "localhost:5432:*:postgres:password" > $APPDATA/postgresql/pgpass.conf
 ```
 
-![win-add-pgpass-file-to-appdata.png](win-add-pgpass-file-to-appdata.png)
+  ![win-pg-add-pgpass.gif](win-pg-add-pgpass.gif)
 
 10. Now, we need to create a super user called "dev". In GitBash, run `createuser -U postgres -Pw --interactive`. When prompted, enter `dev` for the name, a password of your choosing and `y` for the superuser option. This will create a new admin level user named `dev`. When we connect to the database server through our Node apps, we'll have to supply our password, but we've set up this user so that when working with psql from the command line, we won't need to manually supply the password.
 
