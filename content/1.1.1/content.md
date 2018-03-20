@@ -56,10 +56,17 @@ We'll use Homebrew to install Postgres.
 
   ![win-pg-ctl-commands.gif](win-pg-ctl-commands.gif)
 
-9. Now, we need to create a super user called "dev". There's a bug with doing this in GitBash, so you'll need to do this part in the Windows command prompt. From the command prompt, run `createuser -U postgres -Pw --interactive`. When prompted, enter `dev` for the name, a password of your choosing and `y` for the superuser option. This will create a new admin level user named `dev`. When we connect to the database server through our Node apps, we'll have to supply our password, but we've set up this user so that when working with psql from the command line, we won't need to manually supply the password.
+9. Before we continue, let's set up our pgpass.conf file. This file tells the postgres client what password to use when attempting to connect to our local server as the `postgres` user. In GitBash, run the following commands, substituting 'password' with the password you chose during step 3:
+```
+mkdir $APPDATA/postgresql
+echo "localhost:5432:*:postgres:password" > $APPDATA/postgresql/pgpass.conf
+```
+
+  ![win-pg-add-pgpass.gif](win-pg-add-pgpass.gif)
+
+10. Now, we need to create a super user called "dev". In GitBash, run `createuser -U postgres -Pw --interactive`. When prompted, enter `dev` for the name, a password of your choosing and `y` for the superuser option. This will create a new admin level user named `dev`. When we connect to the database server through our Node apps, we'll have to supply our password, but we've set up this user so that when working with psql from the command line, we won't need to manually supply the password.
 
   ![win-create-dev-super-user.gif](win-create-dev-super-user.gif)
 
-10. Next, we'll create a database called `dev`. Back in GitBash, run the command `createdb -U dev dev`.
-11. Now, let's try to use the *psql* shell. In a GitBash terminal, run the command `psql -U dev` from the command line. This will connect you as the user "dev" (that's the `-U dev` part of the command) to the database named "dev". When you start `psql` without listing a database to connect to, it attempts to connect to a db with the name of the user. We also could have done `psql -U dev dev` to be explicit about the database we're connecting to. We'll learn all about working with psql in the next reading, but for now try running the command `\l` to list the databases on the server, and then `\q` to quit.
-
+11. Next, we'll create a database called `dev`. In GitBash, run the command `createdb -U dev dev`.
+12. Now, let's try to use the *psql* shell. In a GitBash terminal, run the command `psql -U dev` from the command line. This will connect you as the user "dev" (that's the `-U dev` part of the command) to the database named "dev". When you start `psql` without listing a database to connect to, it attempts to connect to a db with the name of the user. We also could have done `psql -U dev dev` to be explicit about the database we're connecting to. We'll learn all about working with psql in the next reading, but for now try running the command `\l` to list the databases on the server, and then `\q` to quit.
