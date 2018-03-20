@@ -70,3 +70,4 @@ echo "localhost:5432:*:postgres:password" > $APPDATA/postgresql/pgpass.conf
 
 11. Next, we'll create a database called `dev`. In GitBash, run the command `createdb -U dev dev`.
 12. Now, let's try to use the *psql* shell. In a GitBash terminal, run the command `psql -U dev` from the command line. This will connect you as the user "dev" (that's the `-U dev` part of the command) to the database named "dev". When you start `psql` without listing a database to connect to, it attempts to connect to a db with the name of the user. We also could have done `psql -U dev dev` to be explicit about the database we're connecting to. We'll learn all about working with psql in the next reading, but for now try running the command `\l` to list the databases on the server, and then `\q` to quit.
+
