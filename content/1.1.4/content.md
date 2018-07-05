@@ -153,7 +153,7 @@ Here, we have two criteria for the inner join. We want to join on restaurant id,
 We can do things like count with inner joins just like with simple queries. Here's how to get the number of restaurants that have gotten a C grade:
 
 ```sql
-SELECT count(*)
+SELECT count(distinct restaurants.id)
     FROM restaurants
     INNER JOIN grades
     ON grades.restaurant_id = restaurants.id
