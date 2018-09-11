@@ -20,7 +20,7 @@ We're going to import a SQL dump of the New York City restaurants data in a mome
 
 From the command line, run the following command:
 
-```
+```sh
 createdb -U dev dev-restaurants-app
 ```
 
@@ -35,16 +35,21 @@ When the dump file is a plain text SQL file (which is the format of the backup w
 
 [Download this SQL dump](https://tf-assets-prod.s3.amazonaws.com/courses/node/assets/nyc-restaurants-data-backup.sql).
 
-Now we need to import the backup data. To do that, we'll open psql using the `psql` command with the `-f` flag to specify a SQL script that should be executed on the database. From the command line, run `psql -U dev -f ~/path-to-backup-data dev-restaurants-app`. Make sure you substitute in the right path to the backup data (for instance, `~/Downloads/nyc-restaurants-data-backup.sql`).
+Now we need to import the backup data. To do that, we'll run the `psql` command with three flags to specify the user, database and script file. Below is an example. Make sure the update path with the location where you saved the file.
 
-![psql-import-02.gif](psql-import-02.gif)
+```sh
+psql -U dev -d dev-restaurants-app -f ~/Downloads/nyc-restaurants-data-backup.sql
+```
 
+* `-U <user>` specifies the user
+* `-d <database>` specifies the database
+* `-f <path-to-file>` specifies a SQL script that should be executed
 
 ## Opening and describing the database
 
 We'll see how to read and write to the database in a moment, but first we need to connect to it. We also need to have a look at the database schema so we know how to form our queries.
 
-Open the database by running `psql -U dev dev-restaurants-app`. This will open an interactive Postgres session.
+Open the database by running `psql -U dev -d dev-restaurants-app`. This will open an interactive Postgres session.
 
 Run the `\l` metacommand to list the databases on the server. You'll see the `dev-restaurants-app` database we just created, along with several system level databases that Postgres creates automatically.
 
